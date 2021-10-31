@@ -7,7 +7,7 @@ int main(){
     int64_t ntp_time1, ntp_time2, local_time1, local_time2, ntp_diff, local_diff;
     NTPClient client("ntp.ubuntu.com");
     int delay;
-    std::cout << "This programm counts difference between NTP-server and local time in ms over a given time period.\nInput a preferable time delay in ms: ";
+    std::cout << "This program counts difference between NTP-server and local time in ms over a given time period.\nInput a preferable time delay in ms: ";
     std::cin >> delay;
     ntp_time1 = client.unix_millis();
 
