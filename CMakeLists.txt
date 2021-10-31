@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(ntp_service)
+set(SOURCE_FILES main.cpp NTPClient.cpp NTPClient.h)
+find_package(Boost 1.65 REQUIRED)
+find_package(Threads REQUIRED)
+add_executable(ntp_service ${SOURCE_FILES})
+target_link_libraries(ntp_service PRIVATE Threads::Threads)
